@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travell with US</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .main-continer {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .log-link {
+      text-decoration: none;
+      color: #ff0404;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #103152;
+      /* padding: 15px 20px; */
+      color: white;
+      height: 70px;
+    }
+
+    .logo {
+      height: 45px;
+    }
+
+    nav input {
+      width: 420px;
+      padding: 14px;
+      border-radius: 7px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 16px;
+    }
+    .nav-items {
+      position: relative;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: white;
+      color: black;
+      min-width: 150px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown a {
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown a:hover {
+      background: #f5f7fa;
+    }
+
+    .nav-items:hover .dropdown {
+      display: flex;
+    }
+
+    .middle-box {
+      border: 1px solid #ccc;
+      height: 440px;
+      /* width: 100%; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 28px;
+      /* padding-top: 50px; */
+    }
+    .middle-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.6;
+    }
+    h1 {
+      margin: 10px;
+      font-size: 48px;
+      color: #103152;
+      padding: 25px 15px;
+    }
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+    .img-box img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      /* transition:
+        transform 0.3s,
+        box-shadow 0.3s; */
+    }
+    .img-box img:hover {
+      transform: scale(1.05);
+    }
+    .text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <div class="main-continer">
+      <span>022-78934191</span>
+      <span>Travel Agent? Join Us</span>
+      <a href="login.php" class="log-link">Log in / Sign up</a>
+    </div>
+    <nav>
+      <img
+        class="logo"
+        src="https://static.vecteezy.com/system/resources/thumbnails/009/468/436/small/bus-traveler-camping-car-illustration-logo-vector.jpg"
+        alt="Travel Logo"
+      />
+      <!-- <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div> -->
+      <input
+        type="text"
+        placeholder="Search for destination, hotel, activity"
+      />
+
+      <div class="nav-links">
+        <div class="nav-items">
+          <span>Domestic Tours ▾</span>
+          <div class="dropdown">
+            <a href="#">North India</a>
+            <a href="#">South India</a>
+            <a href="#">Hill Stations</a>
+          </div>
+        </div>
+
+        <div class="nav-items">
+          <span>International Tours ▾</span>
+          <div class="dropdown">
+            <a href="#">Maldives</a>
+            <a href="#">Dubai</a>
+            <a href="#">Thailand</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="middle-box">
+      <img
+        src="https://thumbs.dreamstime.com/b/ready-summer-vacation-travel-background-d-rendering-114574299.jpg"
+        alt=""
+      />
+      <h1>Explore the World</h1>
+      <p>Travel to the beautiful destination with US</p>
+      <p class="2">Ayee hoto tassali se ghum kr jana...</p>
+    </section>
+    <!-- <section>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </section> -->
+    <h1>Top Destinations</h1>
+    <div class="img-box">
+      <div class="text">
+        <img src="assets/pachmari.jpg" alt="" />
+        <div>Pachmari</div>
+        <div>1N/2D</div>
+        <div>4999/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/jaipur.jpg" alt="" />
+        <div>Jaipur</div>
+        <div>4N/5D</div>
+        <div>4999/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/manali.jpg" alt="" />
+        <div>Manali</div>
+        <div>5N/6D</div>
+        <div>13499/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/goa.jpg" alt="" />
+        <div>Goa</div>
+        <div>5N/6D</div>
+        <div>15999/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/ladakh.jpg" alt="" />
+        <div>Ladahk</div>
+        <div>4N/5D</div>
+        <div>12499/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/varkala.jpg" alt="" />
+        <div>Varkala</div>
+        <div>3N/4D</div>
+        <div>13499/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/kashmir.jpg" alt="" />
+        <div>Kashimir</div>
+        <div>7N/8D</div>
+        <div>14999/-</div>
+      </div>
+      <div class="text">
+        <img src="assets/rishikesh.jpg" alt="" />
+        <div>Rishikesh</div>
+        <div>4N/5D</div>
+        <div>7999/-</div>
+      </div>
+    </div>
+  </body>
+</html>
