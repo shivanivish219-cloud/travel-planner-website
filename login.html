@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login pop-up</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility_off"
+    />
+  </head>
+  <style>
+    .main-container {
+      margin: 5% auto;
+      max-width: 400px;
+      padding: 2.5rem 2rem;
+      background: #d0d9f8;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    /* optional heading inside the container */
+    .main-container .login {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    /* spacing for the detail inputs */
+    .main-container .details input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* “remember me” / forgot row */
+    .main-container .me {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    /* submit button */
+    .main-container .submit {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .main-container .submit:hover {
+      background-color: #0056b3;
+    }
+
+    /* small footer text */
+    .main-container .word {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    .main-container .word a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .main-container .word a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="main-container" id="login.php">
+      <div class="login">Login or Register</div>
+      <div class="details">
+        <input type="text" placeholder="Phone Number or E-mail" /><br />
+
+        <input type="text" placeholder="Password" />
+        <span class="material-symbols-outlined"> visibility_off </span>
+      </div>
+
+      <div class="me">
+        <input type="checkbox" /> Remember me
+        <button class="forgot">Forgot Password</button>
+      </div>
+      <button class="submit">SUBMIT</button>
+      <div class="word">
+        Don't have an account or <a href="">Register now</a>
+      </div>
+    </div>
+  </body>
+</html>
